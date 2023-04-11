@@ -4,7 +4,8 @@
 /**
 * create_array - creates an array of chars,
 * and initializes it with a specific char.
-* @size: the size of the array@c: initial value
+* @size: the size of the array
+* @c: initial value
 *
 * Return: a pointer to the array, or NULL if it fails
 */
@@ -20,7 +21,7 @@ array = (char *)malloc(size of(char) * size);
 if (array == NULL)
 return (NULL);
 
-for (i = 0; i < size; i++
+for (i = 0; i < size; i++)
 array[i] = c;
 
 return (array);
