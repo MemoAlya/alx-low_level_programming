@@ -56,18 +56,17 @@ int i, j, start, flag;
 i = j = flag = 0;
 while (str[i])
 {
-if (flag == 0 && str[i] !='')
+if (flag == 0 && str[i] != ' ')
 {
 start = i;
 flag = 1;
-}
 }
 
 if (i > 0 && str[i] == ' ' && str[i - 1] != ' ')
 {
 create_word(words, str, start, i, j);
 j++;
-flag =0;
+flag = 0;
 }
 
 i++;
@@ -76,6 +75,7 @@ i++;
 if (flag == 1)
 create_word(words, str, start, i, j);
 }
+
 /**
 * create_word - creates a word and insert into the array
 * @words: the array of strings
@@ -87,10 +87,11 @@ create_word(words, str, start, i, j);
 void create_word(char **words, char *str, int start, int end, int index)
 {
 int i, j;
+
 i = end - start;
 words[index] = (char *)malloc(sizeof(char) * (i + 1));
 
-for (j =; start < end; start++, j++)
+for (j = 0; start < end; start++, j++)
 words[index][j] = str[start];
 words[index][j] = '\0';
 }
