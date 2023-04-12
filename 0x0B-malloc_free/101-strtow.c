@@ -35,9 +35,9 @@ len += flag == 1 ? 1 : 0;
 if (len == 0)
 return (NULL);
 
-words = (char **)malloc(sizeof(char *) * (len + 100;
+words = (char **)malloc(sizeof(char *) * (len + 1));
 if (words == NULL)
-return (Null);
+return (NULL);
 
 util(words, str);
 words[len] = NULL;
@@ -77,7 +77,7 @@ create_word(words, str, start, i, j);
 }
 
 /**
-* create_word - creates a word and insert into the array
+* create_word - creates a word and insert it into the array
 * @words: the array of strings
 * @str: the string
 * @start: the starting index of the word
