@@ -5,7 +5,7 @@
 * @name: the name given
 * @f: function of name
 *
-*Rturn:void
+*Rteurn: void
 */
 void print_name(char *name, void (*f)(char *))
 {
