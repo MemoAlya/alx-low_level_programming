@@ -3,7 +3,7 @@
 /**
 * print_strings - Prints strings passed to the function separed by separators
 * @separator: A string that is used to separate strings
-* @n:number of unnamed parameters
+* @n: number of unnamed parameters
 * Return: Always 0
 */
 
@@ -13,7 +13,7 @@ char *str;
 unsigned int i;
 va_list ap;
 
-var_start(ap, n);
+va_start(ap, n);
 if (separator == NULL)
 separator = "";
 
