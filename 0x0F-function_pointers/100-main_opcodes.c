@@ -1,4 +1,4 @@
-#include <stdlib.h>
+ii#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -41,7 +41,7 @@ exit(1);
 n = atoi(argv[1]);
 if (n < 0)
 {
-printf"(Error\n");
+printf("Error\n");
 exit(2);
 }
 print_opcodes((char *)&main, n);
