@@ -8,7 +8,7 @@
 
 void print_all(cons char * const format, ...)
 {
-int i:
+int i;
 int flag;
 char *str;
 va_list a_list;
