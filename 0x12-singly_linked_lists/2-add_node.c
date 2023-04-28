@@ -38,5 +38,5 @@ add->len = _strlen(str);
 add->next = *head;
 *head = add;
 
-return (add);
+ireturn (add);
 }
