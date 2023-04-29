@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
-* _strlen -finds the length  of a string
+* _strlen - finds the length  of a string
 * @str: string to find the length of
 *
 * Return: length of string
@@ -24,7 +24,7 @@ return (i);
 *
 * Return: pointer to the new node
 */
-list_t *add_node_end(list_t **head, cons char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new, *tmp;
 
@@ -52,4 +52,3 @@ tmp = tmp->next;
 tmp->next = new;
 return (new);
 }
-
