@@ -8,7 +8,7 @@
 * @s : s is a character
 * Return: value is i
 */
-int_ strlen(const char *s)
+int _strlen(const char *s)
 {
 int i = 0;
 
@@ -38,5 +38,5 @@ add->len = _strlen(str);
 add->next = *head;
 *head = add;
 
-ireturn (add);
+return (add);
 }
