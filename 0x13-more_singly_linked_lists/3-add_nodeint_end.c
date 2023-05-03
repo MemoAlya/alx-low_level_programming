@@ -1,14 +1,14 @@
 #include <string.h>
 #include "lists.h"
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
-*add_nodeint_end - ads a node at the end of a linked list
-*@head: pointer to the first element in the list
-*@n: data to insert in the new element
+*add_nodeint_end - adds a node at the end of a linked list
+* @head: pointer to the first element in the list
+* @n: data to insert in the new element
 *
-*Return: pointer to the new node, or NULL if it fails
+* Return: pointer to the new node, or NULL if it fails
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -21,9 +21,9 @@ if (new == NULL)
 return (NULL);
 
 new->n = n;
-nnew->next = NULL;
+new->next = NULL;
 
-if (head == NULL)
+if (*head == NULL)
 *head = new;
 
 else
