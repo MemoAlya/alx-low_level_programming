@@ -64,7 +64,6 @@ exit(99);
 /**
 * check100 - checks that file descriptors were closed properly
 * @check: checks if true or false
-
 * @fd: file descriptor
 *
 * Return: void
@@ -82,7 +81,7 @@ exit(100);
  * @argc: number of arguments passed
 * @argv: array of pointers to the arguments
 *
- Return: 0 on success
+*Return: 0 on success
 */
 int main(int argc, char *argv[])
 {
